@@ -16,6 +16,10 @@ body {
   line-height: 1.18;
   color: var(--colorTextPrimary);
   background-color: var(--backgroundColor);
+  background-image: url(../img/bg.webp);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 .container {
   max-width: 1507px;
@@ -49,6 +53,18 @@ body {
   font-style: 17px;
   font-weight: 900;
   line-height: 1.18;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.action-links::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/account.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* section-1 */
 .hero {
@@ -64,6 +80,15 @@ body {
   line-height: 1.17;
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero-subtitle::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colorAccent);
 }
 .hero-title {
   font-family: var(--fontTitle);
@@ -71,6 +96,20 @@ body {
   font-size: 88px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.hero-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero-link::after {
+  content: "";
+  width: 16px;
+  height: 24px;
+  background-image: url(../img/arrow_down.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* section-2 */
 .travel {
@@ -93,11 +132,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 27px;
+  padding-left: 150px;
+  background-image: url(../img/card-01.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 50px;
+}
+.travel-item:nth-child(2) .steep-body {
+  background-image: url(../img/card-02.svg);
+}
+.travel-item:nth-child(3) .steep-body {
+  background-image: url(../img/card-03.svg);
 }
 .steep-text {
   font-weight: 900;
   line-height: 0.33em;
   color: var(--colorAccent);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.steep-text::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colorAccent);
 }
 .steep-title {
   font-family: var(--fontTitle);
@@ -109,6 +168,18 @@ body {
 .steep-link {
   font-weight: 900;
   color: var(--colorAccent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.steep-link::after {
+  content: "";
+  background-image: url(../img/arrow_right.svg);
+  width: 24px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* footer */
 .footer {
