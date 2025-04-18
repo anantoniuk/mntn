@@ -49,6 +49,10 @@ body {
   align-items: center;
   gap: 37px;
 }
+.nav-link:hover,
+.action-links:hover {
+  opacity: 0.7;
+}
 .action-links {
   font-style: 17px;
   font-weight: 900;
@@ -101,6 +105,9 @@ body {
   display: flex;
   align-items: center;
   gap: 9px;
+}
+.hero-link:hover {
+  opacity: 0.7;
 }
 .hero-link::after {
   content: "";
@@ -172,6 +179,9 @@ body {
   align-items: center;
   gap: 10px;
 }
+.steep-link:hover {
+  opacity: 0.7;
+}
 .steep-link::after {
   content: "";
   background-image: url(../img/arrow_right.svg);
@@ -216,4 +226,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.blog-link,
+.mntn-link {
+  line-height: 1.78;
+}
+
+.blog-link:hover,
+.mntn-link:hover {
+  opacity: 0.7;
 }
